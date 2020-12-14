@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JOCdYcIDrKvSFyz/gTzkwt0MzLRTkOzpNxJJkQ96FPNhM2T2HJkNmlutjy9CkBZVutTL5qA/cHNyjtF33yn+bw==",
+  "dgSpecHash": "8HKgF0wJnrQI3ntQjBJhnIY+uTvw6HDk+h/rZFrvuIi2iRT+5HkqoNwMXMNuF3mHZUzSmjOezbk/dApGt7ScKQ==",
   "success": true,
-  "projectFilePath": "D:\\Development\\Vidazor\\Vidazor\\Vidazor.csproj",
+  "projectFilePath": "D:\\Development\\Vidazor\\src\\Vidazor\\Vidazor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Arad\\.nuget\\packages\\microsoft.aspnetcore.authorization\\5.0.1\\microsoft.aspnetcore.authorization.5.0.1.nupkg.sha512",
     "C:\\Users\\Arad\\.nuget\\packages\\microsoft.aspnetcore.components\\5.0.1\\microsoft.aspnetcore.components.5.0.1.nupkg.sha512",

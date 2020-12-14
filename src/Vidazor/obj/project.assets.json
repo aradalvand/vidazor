@@ -405,11 +405,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Development\\Vidazor\\Vidazor\\Vidazor.csproj",
+      "projectUniqueName": "D:\\Development\\Vidazor\\src\\Vidazor\\Vidazor.csproj",
       "projectName": "Vidazor",
-      "projectPath": "D:\\Development\\Vidazor\\Vidazor\\Vidazor.csproj",
+      "projectPath": "D:\\Development\\Vidazor\\src\\Vidazor\\Vidazor.csproj",
       "packagesPath": "C:\\Users\\Arad\\.nuget\\packages\\",
-      "outputPath": "D:\\Development\\Vidazor\\Vidazor\\obj\\",
+      "outputPath": "D:\\Development\\Vidazor\\src\\Vidazor\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Arad\\AppData\\Roaming\\NuGet\\NuGet.Config",
