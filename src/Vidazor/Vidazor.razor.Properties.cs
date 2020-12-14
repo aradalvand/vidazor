@@ -108,18 +108,18 @@ namespace Vidazor
         /// <summary>
         /// Gets or sets the name of the media group that the video belongs to.
         /// </summary>
-        public bool MediaGroup
+        public string MediaGroup
         {
-            get => GetValue<bool>();
+            get => GetValue<string>();
             set => SetValue(value);
         }
 
         /// <summary>
         /// Gets or sets a Boolean indicating whether the video is muted or not.
         /// </summary>
-        public bool Muted
+        public string Muted
         {
-            get => GetValue<bool>();
+            get => GetValue<string>();
             set => SetValue(value);
         }
 
