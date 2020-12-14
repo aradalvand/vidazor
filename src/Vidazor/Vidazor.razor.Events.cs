@@ -7,7 +7,7 @@ namespace Vidazor
     public partial class Vidazor
     {
         /// <summary>
-        /// Fires when the loading of an video is aborted.
+        /// Fires when the loading of a video is aborted.
         /// </summary>
         [Parameter]
         public EventCallback OnAbort { get; set; }
