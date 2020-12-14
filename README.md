@@ -1,0 +1,1 @@
+![Vidazor poster](Poster.svg)
