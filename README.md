@@ -28,28 +28,28 @@ After having installed the package, add the following `@using` directives either
 @using Vidazor
 @using Vidazor.Types
 ```
-## 3. Start using the `<Vidazor>` component with a reference:
+## 3. Start using the `<VidazorVideo>` component with a reference:
 Now you're all set up! You can start using Vidazor!
-In your components, use the `<Vidazor>` tag, and reference the component to a private field. Through the private field, you can access the properties and methods that Vidazor offers.
+In your components, use the `<VidazorVideo>` tag, and reference the component to a private field. Through the private field, you can access the properties and methods that Vidazor offers.
 ```razor
-<Vidazor @ref="video" OnTimeUpdate="@(() => Console.WriteLine($"Current time is: {video.CurrentTime}"))">
+<VidazorVideo @ref="video" OnTimeUpdate="@(() => Console.WriteLine($"Current time is: {video.CurrentTime}"))">
     <source src="/sample.mp4" />
-</Vidazor>
+</VidazorVideo>
 
 <button type="button" @onclick="() => video.Play()">Play</button>
 <button type="button" @onclick="() => video.Pause()">Pause</button>
 <button type="button" @onclick="() => video.Muted = !video.Muted">Toggle Sound</button>
 
 @code {
-    Vidazor video;
+    VidazorVideo video;
 }
 ```
 ### Using HTML attributes on the `<video>` tag:
-Vidazor supports [attribute splatting](https://docs.microsoft.com/en-us/aspnet/core/blazor/components/?view=aspnetcore-5.0#attribute-splatting-and-arbitrary-parameters), which means you can pass in any number of HTML attributes you want to the `<Vidazor>` component, and those attributes will then be captured and *splatted* onto the `<video>` element when the component is rendered.
+Vidazor supports [attribute splatting](https://docs.microsoft.com/en-us/aspnet/core/blazor/components/?view=aspnetcore-5.0#attribute-splatting-and-arbitrary-parameters), which means you can pass in any number of HTML attributes you want to the `<VidazorVideo>` component, and those attributes will then be captured and *splatted* onto the `<video>` element when the component is rendered.
 ```razor
-<Vidazor @ref="video" class="foo bar" preload="auto">
+<VidazorVideo @ref="video" class="foo bar" preload="auto">
     <source src="/sample.mp4" />
-</Vidazor>
+</VidazorVideo>
 ```
 HTML ouput:
 ```HTML
@@ -102,7 +102,7 @@ The following properties can be accessed easily through the `Vidazor` object:
 | `.Volume` | `double` | ✔ | [`.volume`](https://www.w3schools.com/tags/av_prop_volume.asp) | Gets or sets a double indicating the volume level, from 0.0 (silent) to 1.0 (loudest). |
 
 ## Events:
-The following events can be hooked into through the `<Vidazor>` component. The type of all the events is the standard Blazor `EventCallback` struct:
+The following events can be hooked into through the `<VidazorVideo>` component. The type of all the events is the standard Blazor `EventCallback` struct:
 | Vidazor Event | JavaScript Equivalent | Description |
 | --- | --- | --- |
 | `OnAbort` | [`abort`](https://www.w3schools.com/tags/av_event_abort.asp) | Fires when the loading of a video is aborted. |

@@ -82,6 +82,20 @@ using BlazorWebAssembly.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "D:\Development\Vidazor\samples\BlazorWebAssembly\_Imports.razor"
+using Vidazor;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "D:\Development\Vidazor\samples\BlazorWebAssembly\_Imports.razor"
+using Vidazor.Types;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -90,6 +104,16 @@ using BlazorWebAssembly.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 13 "D:\Development\Vidazor\samples\BlazorWebAssembly\Pages\Index.razor"
+       
+    VidazorVideo video;
+
+    MediaPlayableStatus? canPlayType;
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

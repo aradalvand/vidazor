@@ -305,6 +305,19 @@
         "runtime": {
           "lib/net5.0/System.Net.Http.Json.dll": {}
         }
+      },
+      "Vidazor/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Vidazor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Vidazor.dll": {}
+        }
       }
     },
     "net5.0/browser-wasm": {
@@ -610,6 +623,19 @@
         },
         "runtime": {
           "lib/net5.0/System.Net.Http.Json.dll": {}
+        }
+      },
+      "Vidazor/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "5.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Vidazor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Vidazor.dll": {}
         }
       }
     }
@@ -1134,13 +1160,19 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Vidazor/1.0.0": {
+      "type": "project",
+      "path": "../../src/Vidazor/Vidazor.csproj",
+      "msbuildProject": "../../src/Vidazor/Vidazor.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.AspNetCore.Components.WebAssembly >= 5.0.1",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 5.0.1",
-      "System.Net.Http.Json >= 5.0.0"
+      "System.Net.Http.Json >= 5.0.0",
+      "Vidazor >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1169,7 +1201,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Development\\Vidazor\\src\\Vidazor\\Vidazor.csproj": {
+              "projectPath": "D:\\Development\\Vidazor\\src\\Vidazor\\Vidazor.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

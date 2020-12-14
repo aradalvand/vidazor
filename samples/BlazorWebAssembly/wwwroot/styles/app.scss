@@ -1,0 +1,113 @@
+﻿// Reset and global:
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+    background: none;
+    border: none;
+    font: inherit;
+}
+
+img,
+video {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+
+#blazor-error-ui {
+    display: none;
+}
+
+:focus {
+    outline: none;
+}
+
+// Font faces:
+
+
+// Base:
+body {
+    background-color: #222222;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.video {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.heading {
+}
+
+.row {
+    display: flex;
+}
+
+.button {
+    flex: 1;
+    background-color: #6B27E0;
+    height: 50px;
+    padding: 0 15px;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    will-change: transform;
+    transition: all cubic-bezier(0.17, 0.82, 0.15, 0.8) 100ms;
+
+    &:hover {
+        background-color: #5b20c0;
+    }
+
+    &:active {
+        transform: translateY(2px);
+    }
+}

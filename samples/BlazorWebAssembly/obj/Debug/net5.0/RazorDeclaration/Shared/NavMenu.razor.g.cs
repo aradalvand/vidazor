@@ -82,6 +82,20 @@ using BlazorWebAssembly.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "D:\Development\Vidazor\samples\BlazorWebAssembly\_Imports.razor"
+using Vidazor;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 12 "D:\Development\Vidazor\samples\BlazorWebAssembly\_Imports.razor"
+using Vidazor.Types;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
