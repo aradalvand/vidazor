@@ -65,7 +65,7 @@ Vidazor provides nearly all the methods, properties, and events that the JavaScr
 - [Events](#events)
 
 ## Methods:
-The following methods can be called easily through the `Vidazor` object:
+The following methods can be called easily through the `VidazorVideo` object:
 | Vidazor Method | JavaScript Equivalent | Description |
 | :---            | :---                   | :---         |
 | `.Play()` | [`.play()`](https://www.w3schools.com/tags/av_met_play.asp) | Plays the video playback. |
@@ -74,7 +74,7 @@ The following methods can be called easily through the `Vidazor` object:
 | `.CanPlayType(string)` | [`.canPlayType(string)`](https://www.w3schools.com/tags/av_met_canplaytype.asp) | Checks if the browser can play a video with the specified MIME media type. |
 
 ## Properties:
-The following properties can be accessed easily through the `Vidazor` object:
+The following properties can be accessed easily through the `VidazorVideo` object:
 | Vidazor Property | Data Type | Get & Set | JavaScript Equivalent | Description |
 | :--- | :--- | :--- | :--- | :--- |
 | `.Autoplay` | `bool` | ✔ | [`.autoplay`](https://www.w3schools.com/tags/av_prop_autoplay.asp) | Gets or sets a Boolean indicating whether playback automatically begins as soon as enough of the video is available to do so without interruption. |
