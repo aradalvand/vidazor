@@ -1,6 +1,6 @@
 ![Vidazor poster](Poster.svg)
 
-# What Is Vidazor?
+# What Is Vidazor? [![NuGet version (Vidazor)](https://img.shields.io/nuget/v/Vidazor.svg?style=flat-square)](https://www.nuget.org/packages/Vidazor/)
 Vidazor = Video + Blazor
 
 Vidazor is a Blazor library (RCL) that allows you to seamlessly work with the HTML5 video API, which normally you'd have to work with manually via JS interop.
