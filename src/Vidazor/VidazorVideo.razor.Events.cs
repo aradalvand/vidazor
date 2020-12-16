@@ -97,7 +97,7 @@ namespace Vidazor
         /// Fires when the playback rate (i.e. speed) of the video has changed.
         /// </summary>
         [Parameter]
-        public EventCallback OnRateChanged { get; set; }
+        public EventCallback OnRateChange { get; set; }
 
         /// <summary>
         /// Fires when the user has finished moving/skipping to a new position in the video.
