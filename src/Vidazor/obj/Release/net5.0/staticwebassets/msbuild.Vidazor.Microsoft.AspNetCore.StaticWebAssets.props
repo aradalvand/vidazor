@@ -1,0 +1,11 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$(MSBuildThisFileDirectory)..\staticwebassets\functions.js">
+      <SourceType>Package</SourceType>
+      <SourceId>Vidazor</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Vidazor</BasePath>
+      <RelativePath>functions.js</RelativePath>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

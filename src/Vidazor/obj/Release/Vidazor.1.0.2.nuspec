@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Vidazor</id>
+    <version>1.0.2</version>
+    <title>Vidazor - HTML5 Video API for Blazor WebAssembly</title>
+    <authors>Arad Aral</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>icon.png</icon>
+    <projectUrl>https://github.com/AradAral/Vidazor</projectUrl>
+    <description>Vidazor = Video + Blazor | The HTML5 Video API For Blazor - Vidazor provides a C#/Blazor interface to the HTML5 video API that you normally can only access with JavaScript.
+			The docs are available at https://github.com/AradAral/Vidazor</description>
+    <copyright>Copyright 2020 (c) Arad Aral. All rights reserved.</copyright>
+    <tags>Blazor Video Blazor WebAssembly HTML5 Video</tags>
+    <repository type="git" url="https://github.com/AradAral/Vidazor" />
+    <dependencies>
+      <group targetFramework="net5.0">
+        <dependency id="Microsoft.AspNetCore.Components.Web" version="5.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Development\Vidazor\src\Vidazor\bin\Release\net5.0\Vidazor.dll" target="lib\net5.0\Vidazor.dll" />
+    <file src="D:\Development\Vidazor\src\Vidazor\bin\Release\net5.0\Vidazor.xml" target="lib\net5.0\Vidazor.xml" />
+    <file src="D:\Development\Vidazor\src\Vidazor\obj\Release\net5.0\staticwebassets\msbuild.Vidazor.Microsoft.AspNetCore.StaticWebAssets.props" target="build\Microsoft.AspNetCore.StaticWebAssets.props" />
+    <file src="D:\Development\Vidazor\src\Vidazor\obj\Release\net5.0\staticwebassets\msbuild.build.Vidazor.props" target="build\Vidazor.props" />
+    <file src="D:\Development\Vidazor\src\Vidazor\obj\Release\net5.0\staticwebassets\msbuild.buildMultiTargeting.Vidazor.props" target="buildMultiTargeting\Vidazor.props" />
+    <file src="D:\Development\Vidazor\src\Vidazor\obj\Release\net5.0\staticwebassets\msbuild.buildTransitive.Vidazor.props" target="buildTransitive\Vidazor.props" />
+    <file src="D:\Development\Vidazor\src\Vidazor\wwwroot\functions.js" target="staticwebassets\functions.js" />
+    <file src="D:\Development\Vidazor\src\Vidazor\icon.png" target="icon.png" />
+  </files>
+</package>

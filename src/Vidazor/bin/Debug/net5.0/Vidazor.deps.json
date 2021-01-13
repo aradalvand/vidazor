@@ -23,7 +23,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v5.0": {
-      "Vidazor/1.0.0": {
+      "Vidazor/1.0.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "5.0.1",
           "Microsoft.CSharp": "5.0.0.0",
@@ -1260,7 +1260,7 @@
     }
   },
   "libraries": {
-    "Vidazor/1.0.0": {
+    "Vidazor/1.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

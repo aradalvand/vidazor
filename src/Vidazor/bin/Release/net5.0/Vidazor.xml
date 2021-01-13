@@ -1,0 +1,344 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Vidazor</name>
+    </assembly>
+    <members>
+        <member name="F:Vidazor.Types.MediaPlayableStatus.Probably">
+            <summary>
+            Indicates that the media type is probably playable.
+            </summary>
+        </member>
+        <member name="F:Vidazor.Types.MediaPlayableStatus.Maybe">
+            <summary>
+            Indicates that there's not enough information to determine whether the media type will be playable or not.
+            </summary>
+        </member>
+        <member name="F:Vidazor.Types.MediaPlayableStatus.No">
+            <summary>
+            Indicates that the media type is not playable.
+            </summary>
+        </member>
+        <member name="F:Vidazor.Types.NetworkState.Empty">
+            <summary>
+            No data yet, the video is not yet initialized. Also, <see cref="!:Videazor.ReadyState"/> is also <see cref="F:Vidazor.Types.ReadyState.HaveNothing"/>.
+            </summary>
+        </member>
+        <member name="F:Vidazor.Types.NetworkState.Idle">
+            <summary>
+            The video is active and a resource is selected, but the network is not being used.
+            </summary>
+        </member>
+        <member name="F:Vidazor.Types.NetworkState.Loading">
+            <summary>
+            The browser is downloading the data.
+            </summary>
+        </member>
+        <member name="F:Vidazor.Types.NetworkState.NoSource">
+            <summary>
+            No video source was found.
+            </summary>
+        </member>
+        <member name="F:Vidazor.Types.Preload.Auto">
+            <summary>
+            Indicates that the whole video can be loaded.
+            </summary>
+        </member>
+        <member name="F:Vidazor.Types.Preload.Metadata">
+            <summary>
+            Indicates that only the metadata (e.g. length) of the video is loaded.
+            </summary>
+        </member>
+        <member name="F:Vidazor.Types.Preload.None">
+            <summary>
+            Indicates that the video should not be preloaded.
+            </summary>
+        </member>
+        <member name="F:Vidazor.Types.ReadyState.HaveNothing">
+            <summary>
+            No information is available about the video resource.
+            </summary>
+        </member>
+        <member name="F:Vidazor.Types.ReadyState.HaveMetadata">
+            <summary>
+            Metadata about the video resource is available.
+            </summary>
+        </member>
+        <member name="F:Vidazor.Types.ReadyState.HaveCurrentData">
+            <summary>
+            Data for the current time is available, but not enough to play more than one frame.
+            </summary>
+        </member>
+        <member name="F:Vidazor.Types.ReadyState.HaveFutureData">
+            <summary>
+            Data for the current time is available, in addition to at least another frame.
+            </summary>
+        </member>
+        <member name="F:Vidazor.Types.ReadyState.HaveEnoughData">
+            <summary>
+            Enough data is available that the video can be played without interruption.
+            </summary>
+        </member>
+        <member name="P:Vidazor.Types.TimeRange.Start">
+            <summary>
+            Represents the start of the time range in seconds.
+            </summary>
+        </member>
+        <member name="P:Vidazor.Types.TimeRange.End">
+            <summary>
+            Represents the end of the time range in seconds.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnAbort">
+            <summary>
+            Fires when the loading of a video is aborted.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnCanPlay">
+            <summary>
+            Fires when the browser can start playing the video, but estimates that it will have to stop for further buffering (i.e. loading).
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnCanPlayThrough">
+            <summary>
+            Fires when the browser can play through the video without stopping for buffering (i.e. loading).
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnDurationChange">
+            <summary>
+            Fires when the duration of the video is updated.
+            </summary>
+            <remarks>
+            Tip: When a video is initially loaded, the duration changes from "NaN" to the actual duration of the video, therefore, this event fires.
+            </remarks>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnEmptied">
+            <summary>
+            Fires when the current playlist is empty.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnEnded">
+            <summary>
+            Fires when the video has finished, and no further data is available.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnError">
+            <summary>
+            Fires when the video could not be loaded due to an error.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnLoadedData">
+            <summary>
+            Fires when the browser has loaded the current frame of the video.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnLoadedMetadata">
+            <summary>
+            Fires when the browser has loaded the video's metadata (e.g. length, etc.)
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnLoadStart">
+            <summary>
+            Fires when the browser has started to load the video.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnPause">
+            <summary>
+            Fires when the video has been paused.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnPlay">
+            <summary>
+            Fires when the video has been started or is no longer paused.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnPlaying">
+            <summary>
+            Fires when the video has been started to play after having been paused OR stopped for buffering (i.e. loading).
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnProgress">
+            <summary>
+            Fires preiodically when the browser loads the video.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnRateChange">
+            <summary>
+            Fires when the playback rate (i.e. speed) of the video has changed.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnSeeked">
+            <summary>
+            Fires when the user has finished moving/skipping to a new position in the video.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnSeeking">
+            <summary>
+            Fires when the user begins moving/skipping to a new position in the video.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnStalled">
+            <summary>
+            Fires when the browser is trying to get media data, but data is unexpectedly not forthcoming.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnSuspend">
+            <summary>
+            Fires when the browser is intentionally not getting media data.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnTimeUpdate">
+            <summary>
+            Fires when the current time has changed.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnVolumeChange">
+            <summary>
+            Fires when the volume level has been changed.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.OnWaiting">
+            <summary>
+            Fires when the video stops because it needs to buffer (i.e. load) the next frame.
+            </summary>
+        </member>
+        <member name="M:Vidazor.VidazorVideo.Play">
+            <summary>
+            Plays the video playback.
+            </summary>
+        </member>
+        <member name="M:Vidazor.VidazorVideo.Pause">
+            <summary>
+            Pauses the video playback.
+            </summary>
+        </member>
+        <member name="M:Vidazor.VidazorVideo.Load">
+            <summary>
+            Reloads the video.
+            </summary>
+        </member>
+        <member name="M:Vidazor.VidazorVideo.CanPlayType(System.String)">
+            <summary>
+            Checks if the browser can play a video with the specified MIME media type.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.Autoplay">
+            <summary>
+            Gets or sets a Boolean indicating whether playback automatically begins as soon as enough of the video is available to do so without interruption.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.Buffered">
+            <summary>
+            Gets an array of <see cref="T:Vidazor.Types.TimeRange"/> objects representing the parts of the video that the browser has buffered (i.e. loaded).
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.Controls">
+            <summary>
+            Gets or sets a Boolean reflecting the "controls" HTML attribute, indicating whether browser's default UI controls are displayed for the video.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.CrossOrigin">
+            <summary>
+            Gets or sets the CORS settings of the video.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.CurrentSrc">
+            <summary>
+            Gets the source URL of the current video.
+            </summary>
+            <remarks>
+            Tip: To set the source URL, use the <see cref="P:Vidazor.VidazorVideo.Src"/> property.
+            </remarks>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.CurrentTime">
+            <summary>
+            Gets or sets a double indicating the current playback time in seconds.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.DefaultMuted">
+            <summary>
+            Gets or sets a Boolean reflecting the "muted" HTML attribute, indicating whether the video is muted by default.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.DefaultPlaybackRate">
+            <summary>
+            Gets or sets a double indicating the default playback rate (i.e. speed) for the video.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.Duration">
+            <summary>
+            Gets a double indicating the total length of the video in seconds.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.Ended">
+            <summary>
+            Gets a Boolean indicating whether the video has ended.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.Loop">
+            <summary>
+            Gets or sets a Boolean reflecting the "loop" HTML attribute, indicating whether the video should start over again after it has ended.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.MediaGroup">
+            <summary>
+            Gets or sets the name of the media group that the video belongs to.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.Muted">
+            <summary>
+            Gets or sets a Boolean indicating whether the video is muted or not.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.NetworkState">
+            <summary>
+            Gets a <see cref="T:Vidazor.Types.NetworkState" /> enum indicating the current state of fetching the media over the network.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.Paused">
+            <summary>
+            Gets a Boolean indicating whether the video is paused or not.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.PlaybackRate">
+            <summary>
+            Gets or sets a double indicating the current playback rate (i.e. speed) of the video. Can be a negative number, which indicates backward playback.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.Played">
+            <summary>
+            Gets an array of <see cref="T:Vidazor.Types.TimeRange"/> objects representing the parts of the video that has been played by the user.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.Preload">
+            <summary>
+            Gets or sets a <see cref="T:Vidazor.Types.Preload"/> enum reflecting the "preload" HTML attribute, indicating what content should be loaded before the video is played by the user.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.ReadyState">
+            <summary>
+            Gets a <see cref="T:Vidazor.Types.ReadyState"/> enum indicating the readiness state of the video (e.g. whether enough of the video has been downloaded to be able to play the video, etc.)
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.Seekable">
+            <summary>
+            Gets an array of <see cref="T:Vidazor.Types.TimeRange"/> objects representing the parts of the video that the user can seek to (i.e. move the playback position to).
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.Seeking">
+            <summary>
+            Gets a Boolean indicating whether the user is currently seeking in the video.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.Src">
+            <summary>
+            Gets or sets a URL reflecting the "src" HTML attribute, indicating the source URL of the video.
+            </summary>
+        </member>
+        <member name="P:Vidazor.VidazorVideo.Volume">
+            <summary>
+            Gets or sets a double indicating the volume level, from 0.0 (silent) to 1.0 (loudest).
+            </summary>
+        </member>
+    </members>
+</doc>
