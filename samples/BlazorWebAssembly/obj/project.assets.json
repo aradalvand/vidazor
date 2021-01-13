@@ -306,7 +306,7 @@
           "lib/net5.0/System.Net.Http.Json.dll": {}
         }
       },
-      "Vidazor/1.0.2": {
+      "Vidazor/1.0.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -625,7 +625,7 @@
           "lib/net5.0/System.Net.Http.Json.dll": {}
         }
       },
-      "Vidazor/1.0.2": {
+      "Vidazor/1.0.3": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
@@ -1161,7 +1161,7 @@
         "version.txt"
       ]
     },
-    "Vidazor/1.0.2": {
+    "Vidazor/1.0.3": {
       "type": "project",
       "path": "../../src/Vidazor/Vidazor.csproj",
       "msbuildProject": "../../src/Vidazor/Vidazor.csproj"
@@ -1172,7 +1172,7 @@
       "Microsoft.AspNetCore.Components.WebAssembly >= 5.0.1",
       "Microsoft.AspNetCore.Components.WebAssembly.DevServer >= 5.0.1",
       "System.Net.Http.Json >= 5.0.0",
-      "Vidazor >= 1.0.2"
+      "Vidazor >= 1.0.3"
     ]
   },
   "packageFolders": {

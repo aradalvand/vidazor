@@ -20,6 +20,9 @@ namespace Vidazor
         IJSRuntime JS { get; set; }
 
         // Public Properties:
+        /// <summary>
+        /// The reference to the &lt;video&gt; element.
+        /// </summary>
         public ElementReference VideoElement { get; set; }
 
         // Private Fields:
@@ -40,8 +43,7 @@ namespace Vidazor
         {
             if (firstRender)
             {
-                // TODO: If this problem (https://github.com/dotnet/aspnetcore/issues/28627) gets solved, make the following line synchronous, and move it to the OnInitialized method: (also see if you can receieve JSInProcessRuntime instead of JSRuntime as a service.)
-                functionsModule = await JS.InvokeAsync<IJSInProcessObjectReference>("import", "./_content/Vidazor/functions.js");
+                functionsModule = await JS.InvokeAsync<IJSInProcessObjectReference>("import", "./_content/Vidazor/functions.min.js");
 
                 foreach (var e in events)
                     SubscribeToEvent(e.Key);
@@ -49,7 +51,7 @@ namespace Vidazor
         }
 
         // Private Helper Methods:
-        private static string ToCamelCase(string str)
+        static string ToCamelCase(string str)
         {
             return char.ToLower(str[0]) + str[1..];
         }
@@ -57,8 +59,9 @@ namespace Vidazor
         // Dispose:
         public void Dispose()
         {
-            objRef?.Dispose();
+            DropAllEventListeners();
             functionsModule?.Dispose();
+            objRef?.Dispose();
         }
     }
 }

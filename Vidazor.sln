@@ -5,12 +5,13 @@ VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vidazor", "src\Vidazor\Vidazor.csproj", "{22F8A9ED-7D41-4011-AE6A-A6985B2AAFDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebAssembly", "samples\BlazorWebAssembly\BlazorWebAssembly.csproj", "{D255A0D9-AD34-4BC5-9C28-01240C960E07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorWebAssembly", "samples\BlazorWebAssembly\BlazorWebAssembly.csproj", "{D255A0D9-AD34-4BC5-9C28-01240C960E07}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{FA5778AE-BBF5-48CC-AFFC-1AF057CCCD0E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DA81EF62-A5DE-4636-860D-44DC7A032473}"
 	ProjectSection(SolutionItems) = preProject
+		C:\Users\Arad\Desktop\.gitignore = C:\Users\Arad\Desktop\.gitignore
 		Poster.svg = Poster.svg
 		README.md = README.md
 	EndProjectSection

@@ -150,12 +150,17 @@ namespace Vidazor
         }
 
         // Private Helper Methods:
-        private void SubscribeToEvent(string eventName)
+        void SubscribeToEvent(string eventName)
         {
             functionsModule.InvokeVoid("subscribeToEvent", VideoElement, objRef, eventName);
         }
 
-        private static string ToJavaScriptEventName(string eventName)
+        void DropAllEventListeners()
+        {
+            functionsModule.InvokeVoid("dropAllEventListeners", VideoElement);
+        }
+
+        static string ToJavaScriptEventName(string eventName)
         {
             // Removes the "On" prefix from the event name, and makes all the letters lowercase.
             return eventName[2..].ToLower();

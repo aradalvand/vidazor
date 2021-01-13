@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="D:\Development\Vidazor\samples\BlazorWebAssembly\bin\Release\net5.0\wwwroot\" />
+  <ContentRoot BasePath="_content/Vidazor" Path="D:\Development\Vidazor\src\Vidazor\wwwroot\" />
+</StaticWebAssets>

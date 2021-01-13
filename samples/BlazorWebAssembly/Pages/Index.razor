@@ -1,7 +1,8 @@
 ﻿@page "/"
 
-<VidazorVideo @ref="video" src="/sample.mp4" class="video" controls />
+<VidazorVideo @ref="video" OnTimeUpdate="OnTimeUpdate" src="/sample.mp4" class="video" controls />
 
+<a href="counter">Go to Counter</a>
 <h1 class="heading">Methods:</h1>
 <div class="row">
     <button type="button" class="button" @onclick="() => video.Play()">Play()</button>
@@ -14,4 +15,9 @@
     VidazorVideo video;
 
     MediaPlayableStatus? canPlayType;
+
+    void OnTimeUpdate()
+    {
+        Console.WriteLine("Time update: " + video.CurrentTime);
+    }
 }

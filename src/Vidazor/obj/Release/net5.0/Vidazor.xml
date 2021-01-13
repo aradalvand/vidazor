@@ -89,6 +89,11 @@
             Represents the end of the time range in seconds.
             </summary>
         </member>
+        <member name="P:Vidazor.VidazorVideo.VideoElement">
+            <summary>
+            The reference to the &lt;video&gt; element.
+            </summary>
+        </member>
         <member name="P:Vidazor.VidazorVideo.OnAbort">
             <summary>
             Fires when the loading of a video is aborted.

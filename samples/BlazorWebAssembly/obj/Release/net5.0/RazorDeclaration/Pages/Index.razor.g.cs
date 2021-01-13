@@ -105,11 +105,16 @@ using Vidazor.Types;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 13 "D:\Development\Vidazor\samples\BlazorWebAssembly\Pages\Index.razor"
+#line 14 "D:\Development\Vidazor\samples\BlazorWebAssembly\Pages\Index.razor"
        
     VidazorVideo video;
 
     MediaPlayableStatus? canPlayType;
+
+    void OnTimeUpdate()
+    {
+        Console.WriteLine("Time update: " + video.CurrentTime);
+    }
 
 #line default
 #line hidden

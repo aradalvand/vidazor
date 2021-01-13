@@ -24,8 +24,26 @@ export function invokeFunction(elm, functionName, ...args) {
     return elm[functionName](...args);
 }
 
+const _listeners = [];
+
 export function subscribeToEvent(elm, instance, eventName) {
-    elm.addEventListener(eventName, function () {
+    var listener = function () {
         instance.invokeMethodAsync('EventFired', eventName);
+    };
+    elm.addEventListener(eventName, listener);
+    _listeners.push({
+        elm: elm,
+        eventName: eventName,
+        listener: listener,
     });
+}
+
+export function dropAllEventListeners(elm) {
+    for (var i = _listeners.length - 1; i >= 0; i--) { // The reason why we loop through the array in reverse is so that we could remove the items in it without breaking the loop.
+        var listener = _listeners[i];
+        if (listener.elm == elm) {
+            elm.removeEventListener(listener.eventName, listener.listener);
+            _listeners.splice(i, 1);
+        }
+    }
 }
