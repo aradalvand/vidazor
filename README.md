@@ -1,3 +1,5 @@
+
+
 ![Vidazor poster](Poster.svg)
 
 # What Is Vidazor? [![NuGet version (Vidazor)](https://img.shields.io/nuget/v/Vidazor.svg?style=flat-square)](https://www.nuget.org/packages/Vidazor/)
@@ -79,7 +81,7 @@ The following properties can be accessed easily through the `VidazorVideo` objec
 | :--- | :--- | :--- | :--- | :--- |
 | `.Autoplay` | `bool` | ✔ | [`.autoplay`](https://www.w3schools.com/tags/av_prop_autoplay.asp) | Gets or sets a Boolean indicating whether playback automatically begins as soon as enough of the video is available to do so without interruption. |
 | `.Buffered` | `TimeRange[]` | Read-only | [`.buffered`](https://www.w3schools.com/tags/av_prop_buffered.asp) | Gets an array of `TimeRange` objects representing the parts of the video that the browser has buffered (i.e. loaded). |
-| `.Controls` | `TimeRange[]` | ✔ | [`.controls`](https://www.w3schools.com/tags/av_prop_controls.asp) | Gets or sets a Boolean reflecting the "controls" HTML attribute, indicating whether browser's default UI controls are displayed for the video. |
+| `.Controls` | `bool` | ✔ | [`.controls`](https://www.w3schools.com/tags/av_prop_controls.asp) | Gets or sets a Boolean reflecting the "controls" HTML attribute, indicating whether browser's default UI controls are displayed for the video. |
 | `.CrossOrigin` | `string` | ✔ | [`.crossorigin`](https://www.w3schools.com/tags/av_prop_crossorigin.asp) | Gets or sets the CORS settings of the video. |
 | `.CurrentSrc` | `string` | Read-only | [`.currentSrc`](https://www.w3schools.com/tags/av_prop_currentsrc.asp) | Gets the source URL of the current video. Tip: To set the source URL, use the `Src` property. |
 | `.CurrentTime` | `double` | ✔ | [`.currentTime`](https://www.w3schools.com/tags/av_prop_currenttime.asp) | Gets or sets a double indicating the current playback time in seconds. |
